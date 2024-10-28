@@ -31,7 +31,7 @@ export const AssetsTable = () => {
   }, []);
 
   return (
-    <div>
+    <div className="Table-container">
       <h1> Assets Table</h1>
 
       <TableComponent data={assets} priceMap={priceMap}></TableComponent>

@@ -12,29 +12,29 @@ export const TableComponent = ({ data, priceMap }: TableComponentProps) => {
 
   return (
     <table className="Table">
-      <thead>
-        <tr>
-          <th key={"id"} className="HeaderCell">
+      <thead className="Header">
+        <tr className="Table-row">
+          <th key={"id"} className="Header-cell Cell">
             ID
           </th>
-          <th key={"asset"} className="HeaderCell">
+          <th key={"asset"} className="Header-cell Cell">
             Asset
           </th>
-          <th key={"price"} className="HeaderCell">
+          <th key={"price"} className="Header-cell Cell">
             Price
           </th>
         </tr>
       </thead>
-      <tbody>
+      <tbody className="Body">
         {data.map((row, rowIndex) => (
-          <tr key={rowIndex}>
-            <td key={"id"} className="TableCell">
+          <tr key={rowIndex} className="Table-row">
+            <td key={"id"} className="Cell">
               {row["id"]}
             </td>
-            <td key={"asset"} className="TableCell">
+            <td key={"asset"} className="Cell">
               {row["asset"]}
             </td>
-            <td key={"price"} className="TableCell">
+            <td key={"price"} className="Cell">
               {priceMap[row.id] || "-"}
             </td>
           </tr>
