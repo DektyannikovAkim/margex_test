@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+
+.Table {
+  width: 100%; 
+  border-collapse: collapse;
+}
+
+.HeaderCell {
+ border: 1px solid #ddd;
+ padding: 8px;
+ background-color: #f2f2f2;
+}
+
+.TableCell {
+ border: 1px solid #ddd;
+ padding: 8px;
+}
